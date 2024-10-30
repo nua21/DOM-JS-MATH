@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <!-- h1 part - welcome -->
+        <h1 id="bg">Welcome to JS DOM Test!!</h1>
+    <!-- h1 part done -->
+
+    <!-- all boxes -->
+     <div id="allbox">
+
+        <!-- 1st box -->
+        <div class="box">
+        <h2 class="boxlist">List of Books</h2>
+        <ul class="books2">
+
+        </ul>
+        </div>
+        <!-- 2nd box -->
+        <div class="box">
+            <h2 class="boxlist">List of fruits</h2>
+            <ul class="fruits2">
+
+            </ul>
+        </div>
+        <!-- 3rd box -->
+        <div class="box">
+            <h2 class="boxlist">List of places</h2>
+            <ul class="places2">
+
+            </ul>
+        </div>
+        <!-- 4th box -->
+        <div class="box">
+            <h2 class="boxlist">List of movies</h2>
+            <ul class="movies2">
+
+            </ul>
+        </div>
+        <!-- 5th box -->
+        <div class="box">
+            <h2 class="boxlist">List of sports</h2>
+            <ul class="sports2">
+
+            </ul>
+        </div>
+    </div>
+
+<script>
+
+    // full body background part
+    let body = document.getElementById('body');
+    body.style.backgroundColor = "olive";
+    // full body background part done
+
+    // h1 part-welcome
+    let background = document.getElementById('bg');
+    background.style.backgroundColor = "pink";
+    background.style.color = "darkRed";
+    background.style.textAlign = "center";
+    background.style.marginLeft = "30px";
+    background.style.marginRight = "30px";
+    // h1 part done
+
+    // all boxes
+    let totalBoxes = document.getElementById('allbox');
+    totalBoxes.style.display = "flex";
+    totalBoxes.style.alignItems = "center";
+    totalBoxes.style.justifyContent = "center";
+    // all boxes done
+
+    // 1st box of books box
+    // 1st box style
+    let books = document.getElementsByClassName('box')[0];
+    books.style.border = "2px solid black";
+    books.style.backgroundColor = "white";
+    books.style.height = "200px";
+    books.style.width = "350px";
+    books.style.borderRadius = "10px";
+    books.style.margin = "30px";
+    books.style.paddingBottom = "20px";
+    // 1st box style done
+
+    // 1st box h2 style
+    let box1h2 = document.getElementsByClassName('boxlist')[0];
+    box1h2.style.color = "blue";
+    // 1st box h2 done
+
+    // 1st box list create and appending
+    let list1Lock = document.getElementsByClassName('books2')[0];
+    
+    let list1Item1 = document.createElement('li');
+    list1Item1.innerText = "book name 1";
+    list1Item1.style.color = "cyan";
+    list1Lock.appendChild(list1Item1);
+
+    let list1Item2 = document.createElement('li');
+    list1Item2.innerText = "book name 2";
+    list1Lock.appendChild(list1Item2);
+
+    let list1Item3 = document.createElement('li');
+    list1Item3.innerText = "book name 3";
+    list1Item3.style.color = "skyBlue";
+    list1Lock.appendChild(list1Item3);
+
+    let list1Item4 = document.createElement('li');
+    list1Item4.innerText = "book name 4";
+    list1Lock.appendChild(list1Item4);
+
+    let list1Item5 = document.createElement('li');
+    list1Item5.innerText = "book name 5";
+    list1Lock.appendChild(list1Item5);
+    // 1st box list created and appended
+
+    // 1st box of books box done
+
+
+    // 2nd box of fruits box
+    // 2nd box style
+    let fruits = document.getElementsByClassName('box')[1];
+    fruits.style.border = "2px,solid,black";
+    fruits.style.backgroundColor = "white";
+    fruits.style.height = "200px";
+    fruits.style.width = "350px";
+    fruits.style.borderRadius = "10px";
+    fruits.style.margin = "30px";
+    fruits.style.paddingBottom = "20px";
+    // 2nd box style done
+
+    // 2nd box h2 style
+    let box2h2 = document.getElementsByClassName('boxlist')[1];
+    box2h2.style.color = "green";
+    // 2nd box h2 style done
+
+    // 2nd box list create and appending
+    let list2Lock = document.getElementsByClassName('fruits2')[0];
+
+    let list2Item1 = document.createElement('li');
+    list2Item1.innerText = "fruit name 1";
+    list2Lock.appendChild(list2Item1);
+
+    let list2Item2 = document.createElement('li');
+    list2Item2.innerText = "fruit name 2";
+    list2Lock.appendChild(list2Item2);
+
+    let list2Item3 = document.createElement('li');
+    list2Item3.innerText = "fruit name 3";
+    list2Lock.appendChild(list2Item3);
+
+    let list2Item4 = document.createElement('li');
+    list2Item4.innerText = "fruit name 4";
+    list2Item4.style.color = "violet"
+    list2Lock.appendChild(list2Item4);
+
+    let list2Item5 = document.createElement('li');
+    list2Item5.innerText = "fruit name 5";
+    list2Lock.appendChild(list2Item5);
+
+    let list2Item6 = document.createElement('li');
+    list2Item6.innerText = "fruit name 6";
+    list2Lock.appendChild(list2Item6);
+
+    let list2Item7 = document.createElement('li');
+    list2Item7.innerText = "fruit name 7";
+    list2Item7.style.color = "deepPink";
+    list2Lock.appendChild(list2Item7);
+    // 2nd box list created and appended
+    // 2nd box of fruits box done
+
+
+    // 3rd box of places box
+
+    // 3rd box style
+    let places = document.getElementsByClassName('box')[2];
+    places.style.border = "2px,solid,black";
+    places.style.backgroundColor = "white";
+    places.style.height = "200px";
+    places.style.width = "350px";
+    places.style.borderRadius = "10px";
+    places.style.margin = "30px";
+    places.style.paddingBottom = "20px";
+    // 3rd box style done
+
+    // 3rd box style
+    let box3h2 = document.getElementsByClassName('boxlist')[2];
+    box3h2.style.color = "deepPink";
+    // 3rd box style done
+
+    // 3rd box list create and appending
+    let list3Lock = document.getElementsByClassName('places2')[0];
+
+    let list3Item1 = document.createElement('li');
+    list3Item1.innerText = "place name 1";
+    list3Lock.appendChild(list3Item1);
+
+    let list3Item2 = document.createElement('li');
+    list3Item2.innerText = "place name 2";
+    list3Item2.style.color = "green";
+    list3Lock.appendChild(list3Item2);
+
+    let list3Item3 = document.createElement('li');
+    list3Item3.innerText = "place name 3";
+    list3Lock.appendChild(list3Item3);
+
+    let list3Item4 = document.createElement('li');
+    list3Item4.innerText = "place name 4";
+    list3Lock.appendChild(list3Item4);
+    // 3rd box list created and appended
+    
+    // 3rd box of places box done
+
+
+    // 4th box of movies box
+    // 4th box style
+    let movies = document.getElementsByClassName('box')[3];
+    movies.style.border = "2px,solid,black";
+    movies.style.backgroundColor = "white";
+    movies.style.height = "200px";
+    movies.style.width = "350px";
+    movies.style.borderRadius = "10px";
+    movies.style.margin = "30px";
+    movies.style.paddingBottom = "20px";
+    //4th box style done
+
+    //4th box h2 style
+    let box4h2 = document.getElementsByClassName('boxlist')[3];
+    box4h2.style.color = "brown";
+    //4th box h2 style done
+
+    //4th box list create and appending
+    let list4Lock = document.getElementsByClassName('movies2')[0];
+
+    let list4Item1 = document.createElement('li');
+    list4Item1.innerText = "movie name 1";
+    list4Lock.appendChild(list4Item1);
+
+    let list4Item2 = document.createElement('li');
+    list4Item2.innerText = "movie name 2";
+    list4Lock.appendChild(list4Item2);
+
+    let list4Item3 = document.createElement('li');
+    list4Item3.innerText = "movie name 3";
+    list4Item3.style.color = "olive";
+    list4Lock.appendChild(list4Item3);
+
+    let list4Item4 = document.createElement('li');
+    list4Item4.innerText = "movie name 4";
+    list4Lock.appendChild(list4Item4);
+    //4th box list created and appended
+    // 4th box of movies box done
+
+
+    // 5th box of sports box
+    //5th box style
+    let sports = document.getElementsByClassName('box')[4];
+    sports.style.border = "2px,solid,black";
+    sports.style.backgroundColor = "white";
+    sports.style.height = "200px";
+    sports.style.width = "350px";
+    sports.style.borderRadius = "10px";
+    sports.style.margin = "30px";
+    sports.style.paddingBottom = "20px";
+    //5th box style done
+
+    //5th box h2 style
+    let box5h2 = document.getElementsByClassName('boxlist')[4];
+    box5h2.style.color = "red";
+    //5th box h2 style done
+
+    //5th box list create and appending
+    let list5Lock = document.getElementsByClassName('sports2')[0];
+
+    let list5Item1 = document.createElement('li');
+    list5Item1.innerText = "sport name 1";
+    list5Item1.style.color = "blue";
+    list5Lock.appendChild(list5Item1);
+
+    let list5Item2 = document.createElement('li');
+    list5Item2.innerText = "sport name 2";
+    list5Lock.appendChild(list5Item2);
+
+    let list5Item3 = document.createElement('li');
+    list5Item3.innerText = "sport name 3";
+    list5Item3.style.color = "bisque";
+    list5Lock.appendChild(list5Item3);
+
+    let list5Item4 = document.createElement('li');
+    list5Item4.innerText = "sport name 4";
+    list5Lock.appendChild(list5Item4);
+    // 5th box list created and appended
+    // 5th box of sports box done
+    
+</script>
+
+</body>
+</html>
